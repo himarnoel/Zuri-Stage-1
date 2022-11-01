@@ -44,12 +44,15 @@ function App() {
             Design
           </a>
         </div>
-        <div className="flex w-full justify-center mb-52">
+        <div className="flex w-full justify-center mb-10">
           <img src={slack} alt="" className="w-5 object-contain mr-3" />
           <img src={github} alt="w-2 object-contain" />
         </div>
-        <div ></div>
       </div>
+      <footer className="bg-red-400 w-full py-32 ">
+        <div className="h-[1px] mx-auto bg-[#EAECF0] w-[80%] "></div>
+        <img src="" alt="" />
+      </footer>
     </div>
   );
 }
