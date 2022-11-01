@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <div className="   max-w-[1240px] lg:mx-auto  bg-green-500 lg:mt-0 ">
+      <div className="   max-w-[1240px] lg:mx-auto lg:mt-0 ">
         <a href="/">
           {" "}
           <img
@@ -34,7 +34,7 @@ function App() {
             Zuri Books
           </a>
           <a className="bg-[#EAECF0]  py-5  w-full font-semibold text-center">
-            Python Book
+            Python Books
           </a>
           <a className="bg-[#EAECF0]  py-5  w-full font-semibold text-center">
             Background Check for Coders
