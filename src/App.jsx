@@ -1,6 +1,6 @@
 import { useState } from "react";
 import btn from "./assets/btn.png";
-import avatar from "./assets/avatar.png";
+import avatar from "./assets/Untitled-1.png";
 import slack from "./assets/slack.png";
 import github from "./assets/Icon.png";
 import zuri from "./assets/Vector.png";
@@ -28,7 +28,7 @@ function App() {
           />
 
           <p className="text-center font-bold lg:text-xl text-lg ">
-            Wizdam Kinm
+           Emmanuel Olaniyi
           </p>
         </div>
         <div className="lg:mt-44 mt-24 flex flex-col justify-evenly  h-[600px]">
