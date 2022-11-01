@@ -52,6 +52,7 @@ function App() {
       <footer className="bg-red-400 w-full py-32 ">
         <div className="h-[1px] mx-auto bg-[#EAECF0] w-[80%] "></div>
         <img src="" alt="" />
+        <img src="" alt="" />
       </footer>
     </div>
   );
