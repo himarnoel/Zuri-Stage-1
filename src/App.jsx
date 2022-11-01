@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <div className=" m-2 lg:m-0 max-w-[1240px] lg:mx-auto   lg:mt-0 ">
+      <div className=" m-3 lg:m-0 max-w-[1240px] lg:mx-auto   lg:mt-0 ">
         <a href="/">
           <img
             src={btn}
@@ -27,10 +27,15 @@ function App() {
           </p>
         </div>
         <div className="lg:mt-44 mt-24 flex flex-col justify-evenly  h-[600px]">
-          <a className="bg-[#EAECF0] py-5  w-full font-semibold text-center">
+          <a
+            href="https://training.zuri.team/"
+            className="bg-[#EAECF0] py-5  w-full font-semibold text-center"
+          >
             Twitter Link
           </a>
-          <a className="bg-[#EAECF0]  py-5  w-full font-semibold text-center">
+          <a 
+           href="https://training.zuri.team/"
+          className="bg-[#EAECF0]  py-5  w-full font-semibold text-center">
             Zuri Team
           </a>
           <a className="bg-[#EAECF0]  py-5  w-full font-semibold text-center">
@@ -46,16 +51,16 @@ function App() {
             Design
           </a>
         </div>
-        <div className="flex w-full justify-center mb-10">
+        <div className="flex w-full justify-center lg:mb-20  mt-5">
           <img src={slack} alt="" className="w-5 object-contain mr-3" />
           <img src={github} alt="w-2 object-contain" />
         </div>
       </div>
-      <footer className=" w-full py-32 ">
-        <div className="h-[1px] mx-auto bg-[#EAECF0] w-[80%] "></div>
-        <div className="grid lg:grid-cols-3  mt-7 lg:justify-items-center gap-2 lg:gap-0 ml-3">
+      <footer className=" w-full py-10 ">
+        <div className="h-[1px] mx-auto bg-[#EAECF0] lg:w-[78%] w-[90%]"></div>
+        <div className="grid lg:grid-cols-3  mt-5 lg:justify-items-center gap-4 lg:gap-0 ml-2 ">
           <img src={zuri} alt="" className="object-contain" />
-          <p>HNG Internship 9 Frontend Task</p>
+          <p className="text-[#667085]">HNG Internship 9 Frontend Task</p>
           <img src={I4g} alt="" className="object-contain" />
         </div>
       </footer>
