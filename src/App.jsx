@@ -24,7 +24,7 @@ function App() {
             src={avatar}
             alt=""
             className="object-contain rounded-full"
-            id="profile__img"
+            id="profile_img"
           />
 
           <p className="text-center font-bold lg:text-xl text-lg ">
@@ -34,14 +34,14 @@ function App() {
         <div className="lg:mt-44 mt-24 flex flex-col justify-evenly  h-[600px]">
           <a
             href="https://twitter.com/ImarWeb"
-            className="bg-[#EAECF0] py-5  w-full font-semibold text-center"
+            className="bg-[#EAECF0] py-5 rounded hover:bg-[#EAECF0] w-full font-semibold text-center"
             id="twitter"
           >
             ImarWeb
           </a>
           <a
             href="https://app.slack.com/client/T042F7V19Q8/C041V6WKAUS/rimeto_profile/U0487R8FC4X"
-            className="bg-[#EAECF0] py-5  w-full font-semibold text-center hidden"
+            className="bg-[#EAECF0] py-5 rounded hover:bg-[#EAECF0] w-full font-semibold text-center hidden"
             id="slack"
           >
             Emmanuel Olaniy 1
@@ -49,12 +49,12 @@ function App() {
           <a
             href="https://training.zuri.team/"
             id="btn__zuri"
-            className="bg-[#EAECF0]  py-5  w-full font-semibold text-center"
+            className="bg-[#EAECF0]  py-5 rounded hover:bg-[#818283] w-full font-semibold text-center"
           >
             Zuri Team
           </a>
           <a
-            className="bg-[#EAECF0]  py-5  w-full font-semibold text-center"
+            className="bg-[#EAECF0]  py-5 rounded hover:bg-[#EAECF0] w-full font-semibold text-center"
             id="books"
             href="http://books.zuri.team/"
           >
@@ -62,20 +62,20 @@ function App() {
           </a>
           <a
             id="book__python"
-            className="bg-[#EAECF0]  py-5  w-full font-semibold text-center"
+            className="bg-[#EAECF0]  py-5 rounded hover:bg-[#EAECF0] w-full font-semibold text-center"
             href="https://books.zuri.team/python-for-beginners?ref_id=EmmanuelOlaniy1"
           >
             Python Books
           </a>
           <a
-            className="bg-[#EAECF0]  py-5  w-full font-semibold text-center"
+            className="bg-[#EAECF0]  py-5 rounded hover:bg-[#EAECF0] w-full font-semibold text-center"
             id="pitch"
             href="https://background.zuri.team"
           >
             Background Check for Coders
           </a>
           <a
-            className="bg-[#EAECF0]  py-5  w-full font-semibold text-center"
+            className="bg-[#EAECF0]  py-5 rounded hover:bg-[#EAECF0] w-full font-semibold text-center"
             id="book__design"
             href="https://books.zuri.team/design-rules"
           >
