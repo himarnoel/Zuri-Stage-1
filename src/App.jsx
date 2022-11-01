@@ -1,14 +1,15 @@
 import { useState } from "react";
 import btn from "./assets/btn.png";
 import avatar from "./assets/avatar.png";
+import slack from "./assets/slack.png";
+import github from "./assets/Icon.png";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <div className="   max-w-[1240px] lg:mx-auto lg:mt-0 ">
+      <div className=" m-2 lg:m-0 max-w-[1240px] lg:mx-auto   lg:mt-0 ">
         <a href="/">
-          {" "}
           <img
             src={btn}
             alt=""
@@ -42,6 +43,10 @@ function App() {
           <a className="bg-[#EAECF0]  py-5  w-full font-semibold text-center">
             Design
           </a>
+        </div>
+        <div className="flex w-full justify-center mb-52">
+          <img src={slack} alt="" className="w-5 object-contain mr-3" />
+          <img src={github} alt="w-2 object-contain" />
         </div>
       </div>
     </div>
