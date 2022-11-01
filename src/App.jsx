@@ -20,7 +20,7 @@ function App() {
         </a>
 
         <div className="lg:w-44 lg:h-44 h-32 w-32 mx-auto lg:pt-20 pt-10 ">
-          <img src={avatar} alt="" className="object-contain rounded-full" />
+          <img src={avatar} alt="" className="object-contain rounded-full"  id="profile__img"/>
 
           <p className="text-center font-bold lg:text-xl text-lg ">
             Wizdam Kinm
@@ -30,6 +30,7 @@ function App() {
           <a
             href="https://training.zuri.team/"
             className="bg-[#EAECF0] py-5  w-full font-semibold text-center"
+            id="twitter"
           >
             Twitter Link
           </a>
