@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <div className=" m-3 lg:m-0 max-w-[1240px] lg:mx-auto   lg:mt-0 ">
+      <div className=" m-3 lg:m-0 lg:w-[1000px] lg:mx-auto   lg:mt-0 ">
         <a href="/">
           <img
             src={btn}
