@@ -74,8 +74,12 @@ function App() {
           >
             Background Check for Coders
           </a>
-          <a className="bg-[#EAECF0]  py-5  w-full font-semibold text-center" >
-            Design
+          <a
+            className="bg-[#EAECF0]  py-5  w-full font-semibold text-center"
+            id="book__design"
+            href="https://books.zuri.team/design-rules"
+          >
+            Book Design
           </a>
         </div>
         <div className="flex w-full justify-center lg:mb-20  mt-5">
