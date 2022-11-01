@@ -4,6 +4,7 @@ import avatar from "./assets/avatar.png";
 import slack from "./assets/slack.png";
 import github from "./assets/Icon.png";
 import zuri from "./assets/Vector.png";
+import I4g from "./assets/I4G.png";
 import "./App.css";
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
         <div className="grid lg:grid-cols-3 mx-auto">
           <img src={zuri} alt="" className="object-contain" />
           <p>HNG Internship 9 Frontend Task</p>
-          <img src={zuri} alt="" className="object-contain" />
+          <img src={I4g} alt="" className="object-contain" />
         </div>
       </footer>
     </div>
