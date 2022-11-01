@@ -3,6 +3,7 @@ import btn from "./assets/btn.png";
 import avatar from "./assets/avatar.png";
 import slack from "./assets/slack.png";
 import github from "./assets/Icon.png";
+import zuri from './assets/Vector.png'
 import "./App.css";
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
       </div>
       <footer className="bg-red-400 w-full py-32 ">
         <div className="h-[1px] mx-auto bg-[#EAECF0] w-[80%] "></div>
-        <img src="" alt="" />
+        <img src={zuri} alt="" />
         <img src="" alt="" />
       </footer>
     </div>
