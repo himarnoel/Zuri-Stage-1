@@ -51,9 +51,9 @@ function App() {
           <img src={github} alt="w-2 object-contain" />
         </div>
       </div>
-      <footer className="bg-red-400 w-full py-32 ">
+      <footer className=" w-full py-32 ">
         <div className="h-[1px] mx-auto bg-[#EAECF0] w-[80%] "></div>
-        <div className="grid lg:grid-cols-3 mx-auto">
+        <div className="grid lg:grid-cols-3  mt-7 lg:justify-items-center gap-2 lg:gap-0 ml-3">
           <img src={zuri} alt="" className="object-contain" />
           <p>HNG Internship 9 Frontend Task</p>
           <img src={I4g} alt="" className="object-contain" />
