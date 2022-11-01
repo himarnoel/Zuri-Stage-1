@@ -48,6 +48,7 @@ function App() {
           <img src={slack} alt="" className="w-5 object-contain mr-3" />
           <img src={github} alt="w-2 object-contain" />
         </div>
+        <div ></div>
       </div>
     </div>
   );
