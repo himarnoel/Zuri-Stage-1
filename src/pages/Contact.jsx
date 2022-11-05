@@ -1,7 +1,11 @@
 import React from "react";
 import I4g from "../assets/I4G.png";
 import zuri from "../assets/Vector.png";
+import { useFormik } from "formik";
 const Contact = () => {
+    const formik=useFormik({
+        
+    })
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
       <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 p-5 lg:mb-20">
