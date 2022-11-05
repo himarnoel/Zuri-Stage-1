@@ -13,14 +13,14 @@ const Contact = () => {
           <div className="mb-3">
             <label
               for="first_name"
-              class="block mb-2 text-sm font-medium text-gray-900 "
+              className="block mb-2 text-sm font-medium text-gray-900 "
             >
               First name
             </label>
             <input
               type="text"
               id="first_name"
-              class="bg-gray-50 border border-gray-300 focus:border-red-900 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
               placeholder="Enter your first name"
               required
             />
@@ -28,14 +28,14 @@ const Contact = () => {
           <div>
             <label
               for="first_name"
-              class="block mb-2 text-sm font-medium text-gray-900 "
+              className="block mb-2 text-sm font-medium text-gray-900  "
             >
               Last name
             </label>
             <input
               type="text"
               id="first_name"
-              class="bg-gray-50 border border-gray-300 focus:border-red-900 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
               placeholder="Enter your last name"
               required
             />
@@ -50,7 +50,7 @@ const Contact = () => {
             <input
               type="text"
               id="first_name"
-              class="bg-gray-50 border border-gray-300 focus:border-red-900 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
               placeholder="yourname@email.com"
               required
             />
@@ -58,14 +58,14 @@ const Contact = () => {
           <div className="col-span-2 mb-3">
             <label
               for="first_name"
-              class="block mb-2 text-sm font-medium text-gray-900 "
+              className="block mb-2 text-sm font-medium text-gray-900 "
             >
-            Message
+              Message
             </label>
             <textarea
               type="text"
               id="first_name"
-              class="bg-gray-50 border border-gray-300 focus:border-red-900 text-sm rounded-lg  block w-full p-2.5 "
+              className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5 "
               placeholder="Send me a message and I'll reply you as soon as possible..."
               required
             />
@@ -74,7 +74,7 @@ const Contact = () => {
             <input
               id="remember"
               type="checkbox"
-              class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-5 focus:ring-blue-300 "
+              className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-5 focus:ring-blue-300 "
               required
             />
             <p className="ml-2">
@@ -82,7 +82,7 @@ const Contact = () => {
               contact you.
             </p>
           </div>
-          <button class="bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2">
+          <button className="bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2">
             Send message
           </button>
         </div>
