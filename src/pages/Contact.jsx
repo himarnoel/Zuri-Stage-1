@@ -8,10 +8,14 @@ const Contact = () => {
       firstname: "",
       lastname: "",
       email: "",
+      check: "",
       message: "",
     },
+    onSubmit: (values) => {
+      console.log(values);
+    },
   });
-  console.log("formik", formik.values);
+  //   console.log("formik", formik.values);
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
       <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 p-5 lg:mb-20">
@@ -19,7 +23,7 @@ const Contact = () => {
         <p className=" text-sm mb-2">
           Hi there, contact me to ask me about anything you have in mind.
         </p>
-        <form action="" method="post">
+        <form onSubmit={formik.handleSubmit}>
           <div className="grid grid-cols-2 gap-3">
             <div className="mb-3">
               <label
@@ -35,6 +39,7 @@ const Contact = () => {
                 className="bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
                 onChange={formik.handleChange}
                 value={formik.values.firstname}
+                onBlur={formik.handleBlur}
                 placeholder="Enter your first name"
                 required
               />
@@ -53,6 +58,7 @@ const Contact = () => {
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
                 onChange={formik.handleChange}
                 value={formik.values.lastname}
+                onBlur={formik.handleBlur}
                 placeholder="Enter your last name"
                 required
               />
@@ -71,6 +77,7 @@ const Contact = () => {
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
                 onChange={formik.handleChange}
                 value={formik.values.email}
+                onBlur={formik.handleBlur}
                 placeholder="yourname@email.com"
                 required
               />
@@ -89,6 +96,7 @@ const Contact = () => {
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5 "
                 onChange={formik.handleChange}
                 value={formik.values.message}
+                onBlur={formik.handleBlur}
                 placeholder="Send me a message and I'll reply you as soon as possible..."
                 required
               />
@@ -97,6 +105,9 @@ const Contact = () => {
               <input
                 id="remember"
                 type="checkbox"
+                onChange={formik.handleChange}
+                value={formik.values.check}
+            onBlur={formik.handleBlur}
                 className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-5 focus:ring-blue-300 "
                 required
               />
@@ -105,7 +116,7 @@ const Contact = () => {
                 contact you.
               </p>
             </div>
-            <button className="bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2">
+            <button className="bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2" type="submit">
               Send message
             </button>
           </div>
