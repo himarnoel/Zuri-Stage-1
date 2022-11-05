@@ -4,7 +4,12 @@ import zuri from "../assets/Vector.png";
 import { useFormik } from "formik";
 const Contact = () => {
     const formik=useFormik({
-        
+        initialValues:{
+            firstname:"",
+            lastname:"",
+            email:"",
+            message:"",
+        }
     })
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
@@ -25,6 +30,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="first_name"
+                name="firstname"
                 className="bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
                 placeholder="Enter your first name"
                 required
@@ -40,6 +46,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="last_name"
+                name="lastname"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
                 placeholder="Enter your last name"
                 required
@@ -55,6 +62,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="email"
+                name="email"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
                 placeholder="yourname@email.com"
                 required
@@ -70,6 +78,7 @@ const Contact = () => {
               <textarea
                 type="text"
                 id="message"
+                name="message"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5 "
                 placeholder="Send me a message and I'll reply you as soon as possible..."
                 required
