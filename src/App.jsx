@@ -28,7 +28,7 @@ function App() {
           />
 
           <p className="text-center font-bold lg:text-xl text-lg ">
-           Emmanuel Olaniyi
+            Emmanuel Olaniyi
           </p>
         </div>
         <div className="lg:mt-44 mt-24 flex flex-col justify-evenly  h-[600px]">
@@ -80,6 +80,13 @@ function App() {
             href="https://books.zuri.team/design-rules"
           >
             Book Design
+          </a>
+          <a
+            className="bg-[#EAECF0]  py-5 rounded hover:bg-[#9fa1a2]  w-full font-semibold text-center"
+            id="book__design"
+            href="https://books.zuri.team/design-rules"
+          >
+           Contact Me
           </a>
         </div>
         <div className="flex w-full justify-center lg:mb-20  mt-5">
