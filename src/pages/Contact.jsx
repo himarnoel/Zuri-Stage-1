@@ -3,6 +3,7 @@ import I4g from "../assets/I4G.png";
 import zuri from "../assets/Vector.png";
 import { useFormik } from "formik";
 import { basicSchema } from "./../Schema/index";
+import pad from "./../../node_modules/lodash-es/pad";
 const Contact = () => {
   const formik = useFormik({
     initialValues: {
@@ -38,13 +39,22 @@ const Contact = () => {
                 type="text"
                 id="first_name"
                 name="firstname"
-                className="bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
+                className={
+                  formik.errors.firstname && formik.touched.firstname
+                    ? "bg-gray-50 border border-gray-300 border-solid  focus:outline-red-500  text-sm rounded-lg  block w-full p-2.5"
+                    : "bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
+                }
                 onChange={formik.handleChange}
                 value={formik.values.firstname}
                 onBlur={formik.handleBlur}
                 placeholder="Enter your first name"
                 required
               />
+               {formik.errors.firstname && formik.touched.firstname ? (
+                <p className="text-red-500 ">{formik.errors.email}</p>
+              ) : (
+                ""
+              )}
             </div>
             <div>
               <label
@@ -57,7 +67,11 @@ const Contact = () => {
                 type="text"
                 id="last_name"
                 name="lastname"
-                className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
+                className={
+                  formik.errors.lastname && formik.touched.lastname
+                    ? "bg-gray-50 border border-gray-300 border-solid  focus:outline-red-500  text-sm rounded-lg  block w-full p-2.5"
+                    : "bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
+                }
                 onChange={formik.handleChange}
                 value={formik.values.lastname}
                 onBlur={formik.handleBlur}
@@ -76,13 +90,22 @@ const Contact = () => {
                 type="text"
                 id="email"
                 name="email"
-                className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
+                className={
+                  formik.errors.email && formik.touched.email
+                    ? "bg-gray-50 border border-gray-300 border-solid  focus:outline-red-500  text-sm rounded-lg  block w-full p-2.5"
+                    : "bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
+                }
                 onChange={formik.handleChange}
                 value={formik.values.email}
                 onBlur={formik.handleBlur}
                 placeholder="yourname@email.com"
                 required
               />
+              {formik.errors.email && formik.touched.email ? (
+                <p className="text-red-500 ">{formik.errors.email}</p>
+              ) : (
+                ""
+              )}
             </div>
             <div className="col-span-2 mb-3">
               <label
@@ -95,13 +118,22 @@ const Contact = () => {
                 type="text"
                 id="message"
                 name="message"
-                className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5 "
+                className={
+                  formik.errors.email && formik.touched.email
+                    ? "bg-gray-50 border border-gray-300 border-solid  focus:outline-red-500  text-sm rounded-lg  block w-full p-2.5"
+                    : "bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
+                }
                 onChange={formik.handleChange}
                 value={formik.values.message}
                 onBlur={formik.handleBlur}
                 placeholder="Send me a message and I'll reply you as soon as possible..."
                 required
               />
+               {formik.errors.message && formik.touched.message ? (
+                <p className="text-red-500 ">{formik.errors.email}</p>
+              ) : (
+                ""
+              )}
             </div>
             <div className=" flex items-center col-span-2 mb-4">
               <input
