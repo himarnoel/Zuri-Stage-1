@@ -2,19 +2,21 @@ import React from "react";
 import I4g from "../assets/I4G.png";
 import zuri from "../assets/Vector.png";
 import { useFormik } from "formik";
+import { basicSchema } from "./../Schema/index";
 const Contact = () => {
   const formik = useFormik({
     initialValues: {
       firstname: "",
       lastname: "",
       email: "",
-      check: "",
       message: "",
     },
+    validationSchema: basicSchema,
     onSubmit: (values) => {
       console.log(values);
     },
   });
+  console.log(formik.errors);
   //   console.log("formik", formik.values);
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
@@ -107,7 +109,7 @@ const Contact = () => {
                 type="checkbox"
                 onChange={formik.handleChange}
                 value={formik.values.check}
-            onBlur={formik.handleBlur}
+                onBlur={formik.handleBlur}
                 className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-5 focus:ring-blue-300 "
                 required
               />
@@ -116,7 +118,10 @@ const Contact = () => {
                 contact you.
               </p>
             </div>
-            <button className="bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2" type="submit">
+            <button
+              className="bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2"
+              type="submit"
+            >
               Send message
             </button>
           </div>
