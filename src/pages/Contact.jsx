@@ -50,6 +50,8 @@ const Contact = () => {
                 id="last_name"
                 name="lastname"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
+                onChange={formik.handleChange}
+                value={formik.values.lastname}
                 placeholder="Enter your last name"
                 required
               />
@@ -66,6 +68,8 @@ const Contact = () => {
                 id="email"
                 name="email"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
+                onChange={formik.handleChange}
+                value={formik.values.firstname}
                 placeholder="yourname@email.com"
                 required
               />
@@ -82,6 +86,8 @@ const Contact = () => {
                 id="message"
                 name="message"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5 "
+                onChange={formik.handleChange}
+                value={formik.values.firstname}
                 placeholder="Send me a message and I'll reply you as soon as possible..."
                 required
               />
