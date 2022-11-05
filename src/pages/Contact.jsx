@@ -3,14 +3,15 @@ import I4g from "../assets/I4G.png";
 import zuri from "../assets/Vector.png";
 import { useFormik } from "formik";
 const Contact = () => {
-    const formik=useFormik({
-        initialValues:{
-            firstname:"",
-            lastname:"",
-            email:"",
-            message:"",
-        }
-    })
+  const formik = useFormik({
+    initialValues: {
+      firstname: "",
+      lastname: "",
+      email: "",
+      message: "",
+    },
+  });
+  console.log("formik", formik.values);
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
       <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 p-5 lg:mb-20">
@@ -59,7 +60,7 @@ const Contact = () => {
             <div className="col-span-2 mb-2">
               <label
                 htmlFor="email"
-                class="block mb-2 text-sm font-medium text-gray-900 "
+                className="block mb-2 text-sm font-medium text-gray-900 "
               >
                 Email
               </label>
@@ -69,7 +70,7 @@ const Contact = () => {
                 name="email"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5"
                 onChange={formik.handleChange}
-                value={formik.values.firstname}
+                value={formik.values.email}
                 placeholder="yourname@email.com"
                 required
               />
@@ -87,12 +88,12 @@ const Contact = () => {
                 name="message"
                 className="bg-gray-50 border border-gray-300 focus:outline-[#1570EF] text-sm rounded-lg  block w-full p-2.5 "
                 onChange={formik.handleChange}
-                value={formik.values.firstname}
+                value={formik.values.message}
                 placeholder="Send me a message and I'll reply you as soon as possible..."
                 required
               />
             </div>
-            <div class=" flex items-center col-span-2 mb-4">
+            <div className=" flex items-center col-span-2 mb-4">
               <input
                 id="remember"
                 type="checkbox"
