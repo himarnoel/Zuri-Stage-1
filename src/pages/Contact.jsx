@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
       <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 p-5 lg:mb-20">
-        <h1 className="text-2xl mb-3 font-bold ">Contact Me</h1>
+        <h1 className="text-3xl mb-3 font-bold ">Contact Me</h1>
         <p className=" text-sm mb-2">
           Hi there, contact me to ask me about anything you have in mind.
         </p>
