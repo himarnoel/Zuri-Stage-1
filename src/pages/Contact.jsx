@@ -4,11 +4,13 @@ import zuri from "../assets/Vector.png";
 const Contact = () => {
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
-      <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 p-5 ">
-        <h1 className="text-xl mb-3 font-bold">Contact Me</h1>
-        <p className=" text-sm mb-3">Hi there, contact me to ask me about anything you have in mind.</p>
+      <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 p-5 mb-20">
+        <h1 className="text-2xl mb-3 font-bold ">Contact Me</h1>
+        <p className=" text-sm mb-2">
+          Hi there, contact me to ask me about anything you have in mind.
+        </p>
         <div className="grid grid-cols-2 gap-3">
-          <div>
+          <div className="mb-3">
             <label
               for="first_name"
               class="block mb-2 text-sm font-medium text-gray-900 "
@@ -38,7 +40,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="col-span-2">
+          <div className="col-span-2 mb-2">
             <label
               for="first_name"
               class="block mb-2 text-sm font-medium text-gray-900 "
@@ -53,12 +55,12 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="col-span-2">
+          <div className="col-span-2 mb-3">
             <label
               for="first_name"
               class="block mb-2 text-sm font-medium text-gray-900 "
             >
-              Email
+            Message
             </label>
             <textarea
               type="text"
@@ -80,8 +82,8 @@ const Contact = () => {
               contact you.
             </p>
           </div>
-          <button class="bg-blue-500 hover:bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2">
-            Button
+          <button class="bg-[#1570EF] text-white font-bold py-2 px-4 rounded col-span-2">
+            Send message
           </button>
         </div>
       </div>
