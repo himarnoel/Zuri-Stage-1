@@ -51,7 +51,7 @@ const Contact = () => {
                 required
               />
                {formik.errors.firstname && formik.touched.firstname ? (
-                <p className="text-red-500 ">{formik.errors.email}</p>
+                <p className="text-red-500 ">{formik.errors.firstname}</p>
               ) : (
                 ""
               )}
@@ -78,6 +78,11 @@ const Contact = () => {
                 placeholder="Enter your last name"
                 required
               />
+              {formik.errors.lastname && formik.touched.lastname ? (
+                <p className="text-red-500 ">{formik.errors.lastname}</p>
+              ) : (
+                ""
+              )}
             </div>
             <div className="col-span-2 mb-2">
               <label
@@ -119,7 +124,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 className={
-                  formik.errors.email && formik.touched.email
+                  formik.errors.message && formik.touched.message
                     ? "bg-gray-50 border border-gray-300 border-solid  focus:outline-red-500  text-sm rounded-lg  block w-full p-2.5"
                     : "bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
                 }
@@ -130,7 +135,7 @@ const Contact = () => {
                 required
               />
                {formik.errors.message && formik.touched.message ? (
-                <p className="text-red-500 ">{formik.errors.email}</p>
+                <p className="text-red-500 ">{formik.errors.message}</p>
               ) : (
                 ""
               )}
