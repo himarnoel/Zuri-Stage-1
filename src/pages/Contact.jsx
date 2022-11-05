@@ -32,6 +32,8 @@ const Contact = () => {
                 id="first_name"
                 name="firstname"
                 className="bg-gray-50 border border-gray-300 border-solid  focus:outline-[#1570EF]  text-sm rounded-lg  block w-full p-2.5"
+                onChange={formik.handleChange}
+                value={formik.values.firstname}
                 placeholder="Enter your first name"
                 required
               />
