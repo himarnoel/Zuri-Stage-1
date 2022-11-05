@@ -3,9 +3,9 @@ import btn from "../assets/btn.png";
 import avatar from "../assets/Untitled-1.png";
 import slack from "../assets/slack.png";
 import github from "../assets/Icon.png";
-import zuri from "../assets/Vector.png";
-import I4g from "../assets/I4G.png";
-import { Link} from 'react-router-dom'
+
+import { Link } from "react-router-dom";
+import Bottom from "./../components/Bottom";
 const Home = () => {
   return (
     <div>
@@ -75,32 +75,25 @@ const Home = () => {
           </a>
           <a
             className="bg-[#EAECF0]  py-5 rounded hover:bg-[#9fa1a2]  w-full font-semibold text-center"
-            id="book__design"
+            id="book_design"
             href="https://books.zuri.team/design-rules"
           >
             Book Design
           </a>
-          <a
+          <Link
             className="bg-[#EAECF0]  py-5 rounded hover:bg-[#9fa1a2]  w-full font-semibold text-center"
-            id="book__design"
-            href="https://books.zuri.team/design-rules"
+            id="book_design"
+            to="/contact"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
         <div className="flex w-full justify-center lg:mb-20  mt-5">
           <img src={slack} alt="" className="w-5 object-contain mr-3" />
           <img src={github} alt="w-2 object-contain" />
         </div>
       </div>
-      <footer className=" w-full py-10 ">
-        <div className="h-[1px] mx-auto bg-[#EAECF0] lg:w-[78%] w-[90%]"></div>
-        <div className="grid lg:grid-cols-3  mt-5 lg:justify-items-center gap-4 lg:gap-0 ml-2 ">
-          <img src={zuri} alt="" className="object-contain" />
-          <p className="text-[#667085]">HNG Internship 9 Frontend Task</p>
-          <img src={I4g} alt="" className="object-contain" />
-        </div>
-      </footer>
+      <Bottom />
     </div>
   );
 };
