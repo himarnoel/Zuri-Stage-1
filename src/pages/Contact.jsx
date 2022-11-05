@@ -4,9 +4,9 @@ import zuri from "../assets/Vector.png";
 const Contact = () => {
   return (
     <div className="flex justify-between items-center flex-col  h-screen m-2 lg:m-0">
-      <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 ">
-        <h1>Contact Me</h1>
-        <p>Hi there, contact me to ask me about anything you have in mind.</p>
+      <div className="h-screen w-screen lg:w-[60%] lg:h-[80%]  mt-2 p-5 ">
+        <h1 className="text-xl mb-3 font-bold">Contact Me</h1>
+        <p className=" text-sm mb-3">Hi there, contact me to ask me about anything you have in mind.</p>
         <div className="grid grid-cols-2 gap-3">
           <div>
             <label
