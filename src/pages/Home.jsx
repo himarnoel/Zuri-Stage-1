@@ -1,10 +1,11 @@
 import React from "react";
-import btn from "./assets/btn.png";
-import avatar from "./assets/Untitled-1.png";
-import slack from "./assets/slack.png";
-import github from "./assets/Icon.png";
-import zuri from "./assets/Vector.png";
-import I4g from "./assets/I4G.png";
+import btn from "../assets/btn.png";
+import avatar from "../assets/Untitled-1.png";
+import slack from "../assets/slack.png";
+import github from "../assets/Icon.png";
+import zuri from "../assets/Vector.png";
+import I4g from "../assets/I4G.png";
+import { Link} from 'react-router-dom'
 const Home = () => {
   return (
     <div>
@@ -37,13 +38,13 @@ const Home = () => {
           >
             ImarWeb
           </a>
-          <a
-            href="https://app.slack.com/client/T042F7V19Q8/C041V6WKAUS/rimeto_profile/U0487R8FC4X"
+          <Link
+            to="https://app.slack.com/client/T042F7V19Q8/C041V6WKAUS/rimeto_profile/U0487R8FC4X"
             className="bg-[#EAECF0] py-5 rounded hover:bg-[#9fa1a2] w-full font-semibold text-center hidden"
             id="slack"
           >
             Emmanuel Olaniy 1
-          </a>
+          </Link>
           <a
             href="https://training.zuri.team/"
             id="btn__zuri"
